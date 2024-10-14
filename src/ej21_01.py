@@ -1,3 +1,8 @@
+'''
+Este algoritmo pregunta la edad de un usuario para comprobar si es mayor o menor de 
+edad. En funcion de si es mayor o menor de edad muestra un mensaje u otro
+'''
+
 # Define la funcion comprobar_mayoria_edad que comprueba si la edad introducida
 # es mayor o menor a 18 años
 def comprobar_mayoria_edad(edad):
