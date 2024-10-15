@@ -1,11 +1,30 @@
 '''
+Ej 21_02
+
 Este algoritmo se encarga de pedir una contraseña y luego preguntar la contraseña para comprobar
 si se ha introducido por segunda vez de manera correcta
+
+Funciones disponibles:
+    * comprobarContraseña - comprueba si el usuario ha escrito la contraseña con exito
+    Comprueba si el usuario ha escrito la contraseña con exito
+    * preguntarContraseña - pregunta la contraseña al usuario
+    * pedirContraseña - pide una contraseña al usuario
+    * main - funcion main
+
 '''
 
-# Define la funcion comprobarContraseña que comprueba si la contraseña
-# introducida es igual a la contraseña puesta
-def comprobarContraseña(contraseña, contraseñaIntroducida):
+def comprobarContraseña(contraseña: str, contraseñaIntroducida: str) -> str:
+    ''' Comprueba si la contraseña introducida es igual a la contraseña    
+    
+    Args:
+        contraseña (str): Contraseña del usuario
+        contraseñaIntroducida (str): Contraseña a comparar
+
+    Returns:
+        str: Retorna un mensaje en funcion desi la contraseña es correcta o no
+
+    '''
+
     # Si la contraseña introducida no es igual a la anterior
     # muestra mensaje de error
     if contraseña != contraseñaIntroducida:
@@ -15,25 +34,37 @@ def comprobarContraseña(contraseña, contraseñaIntroducida):
     if contraseña == contraseñaIntroducida:
         return 'Has introducido la contraseña con exito.'
 
-# Define la funcion preguntarContraseña que pregunta la contraseña
-# puesta anteriormente 
-def preguntarContraseña():
+def preguntarContraseña() -> str:
+    ''' Pregunta al usuario la contraseña que ha escrito previamente
+    
+    Returns:
+        str: La contraseña a comprobar en minusculas
+
+    '''
     contreñaIntroducida = input('Dime la contraseña: ')
     # Devuelve la contraseña en minusculas
     return contreñaIntroducida.lower()
 
-# Define la funcion pedir contraseña que lee una contraseña
-def pedirContraseña():
+def pedirContraseña() -> str:
+    ''' Pide al usuario una contraseña
+
+    Returns:
+        str: Retorna la contraseña escrita en minusculas
+    
+    '''
     contraseña = input('Introduce la contraseña: ')
     # Devuelve la contraseña en minusculas
     return contraseña.lower()
 
-# Define la funcion main
 def main():
+    ''' Funcion main '''
     contraseña = pedirContraseña()
+    
     contraseñaIntroducida = preguntarContraseña()
-    print(comprobarContraseña(contraseña, contraseñaIntroducida))
 
-# Ejecuta la funcion main
+    resultado = comprobarContraseña(contraseña, contraseñaIntroducida)
+    
+    print(resultado)
+
 if __name__ == "__main__":
     main()
