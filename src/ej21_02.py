@@ -14,7 +14,8 @@ Funciones disponibles:
 '''
 
 def comprobarContraseña(contraseña: str, contraseñaIntroducida: str) -> str:
-    ''' Comprueba si la contraseña introducida es igual a la contraseña    
+    ''' 
+    Comprueba si la contraseña introducida es igual a la contraseña    
     
     Args:
         contraseña (str): Contraseña del usuario
@@ -35,7 +36,8 @@ def comprobarContraseña(contraseña: str, contraseñaIntroducida: str) -> str:
         return 'Has introducido la contraseña con exito.'
 
 def preguntarContraseña() -> str:
-    ''' Pregunta al usuario la contraseña que ha escrito previamente
+    ''' 
+    Pregunta al usuario la contraseña que ha escrito previamente
     
     Returns:
         str: La contraseña a comprobar en minusculas
@@ -46,7 +48,8 @@ def preguntarContraseña() -> str:
     return contreñaIntroducida.lower()
 
 def pedirContraseña() -> str:
-    ''' Pide al usuario una contraseña
+    ''' 
+    Pide al usuario una contraseña
 
     Returns:
         str: Retorna la contraseña escrita en minusculas

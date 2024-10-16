@@ -13,7 +13,8 @@ Funciones disponibles:
 '''
 
 def comprobarMayoriaEdad(edad: int) -> str:
-    ''' Comprueba si la edad introducida es mayor o menor a 18 años
+    ''' 
+    Comprueba si la edad introducida es mayor o menor a 18 años
 
     Args:
         edad (int): La edad del usuario a comprobar
@@ -28,7 +29,8 @@ def comprobarMayoriaEdad(edad: int) -> str:
         return 'Felicidades!! Aun puedes no tener responsabilidades.'
 
 def pedirEdad() -> int:
-    ''' Pide la edad al usuario
+    ''' 
+    Pide la edad al usuario
     
     Returns:
         int: Devuelve la edad del usuario
@@ -45,7 +47,8 @@ def pedirEdad() -> int:
     return int(edad)
 
 def comprobarEdad(edad: str) -> bool:
-    ''' Comprueba que la edad introducida sea un numero entero
+    ''' 
+    Comprueba que la edad introducida sea un numero entero
 
     Args:
         edad (str): Edad del usuario
