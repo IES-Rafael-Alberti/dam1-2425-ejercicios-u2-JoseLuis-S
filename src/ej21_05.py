@@ -11,6 +11,9 @@ Funciones disponibles:
     * pedir_edad - pide la edad al usuario
     * main - funcion main
 '''
+EDAD_PARA_TRIBUTAR = 16
+CANTIDAD_PARA_TRIBUTAR = 1000
+
 def resultado_final(edad: int, edad_tributar: int, cantidad_para_tributar: float) -> str:
     '''
     Muestra si la persona tiene que tributar o no
@@ -79,9 +82,7 @@ def pedir_edad() -> int:
 def main():
     '''Funcion main'''
     edad = pedir_edad()
-    edad_tributar = 16
-    cantidad_para_tributar = 1000
-    resultado = resultado_final(edad, edad_tributar, cantidad_para_tributar)
+    resultado = resultado_final(edad, EDAD_PARA_TRIBUTAR, CANTIDAD_PARA_TRIBUTAR)
 
     print(resultado)
 
