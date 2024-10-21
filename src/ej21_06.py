@@ -45,14 +45,20 @@ def pedir_genero() -> str:
     Pide el genero al usuario y comprueba que no tenga numeros
     
     Returns:
-        str: 
+        str: Retorna el genero escrito en minusculas 
     '''
     genero = input('Introduce tu genero (masculino o femenino): ').lower()
     while genero not in ('masculino', 'femenino'):
         genero = input('ERROR, introduce tu genero (masculino o femenino): ').lower()
     return genero.lower()
 
-def pedir_nombre():
+def pedir_nombre() -> str:
+    '''
+    Pide el nombre al usuario y comprueba que no contenga numeros
+    
+    Returns:
+        str: Retorna el nombre escrito en minusculas
+    '''
     nombre = input('Introduce tu nombre: ').strip()
     while True:
         contiene_numeros = False  
