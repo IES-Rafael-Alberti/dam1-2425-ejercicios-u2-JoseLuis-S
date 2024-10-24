@@ -1,18 +1,9 @@
-def generar_cuenta_regresiva(num):
-    lista = []
-
-    for i in reversed(range (num + 1)):
-        lista.append(i)
-
-    return lista        
-
-        
-def pedir_numero():
+def pedir_num():
     comprobacion = False
 
     while not comprobacion:
         try:
-            num = int(input('Introduce un numero para la cuenta regresiva (mayor que 0): '))
+            num = int(input('Introduce un numero para saber su tabla de multiplicar: '))
             while num < 0:
                 num = int(input('Introduce un numero para la cuenta regresiva (mayor que 0): '))
 
@@ -28,11 +19,12 @@ def pedir_numero():
 
 
 def main():
-    num = pedir_numero()
-    lista = generar_cuenta_regresiva(num)
+    num = pedir_num()
     
-    print(f'La cuenta regresiva, desde {num} hasta 0, seria {lista}.')
+    print(f'\nLa tabla de multiplicar de {num} es:\n')
 
+    for i in range (11):
+        print(f'{num} * {i} = {num * i}')
 
 if __name__ == '__main__':
     main()
