@@ -10,7 +10,7 @@ Funciones disponibles:
     * main - funcion main
 '''
 
-def comprobarPrimo(num: int) -> str:
+def comprobar_primo(num: int) -> str:
     '''Comprueba si el numero introducido es un numero primo o no
 
     Args: 
@@ -40,7 +40,7 @@ def comprobarPrimo(num: int) -> str:
     else:
         return (f'El numero {num} es un numero primo.')    
 
-def pedirNum() -> int:
+def pedir_num() -> int:
     ''' Pide un numero al usuario
 
     Returns:
@@ -69,8 +69,8 @@ def pedirNum() -> int:
 
 def main():
     '''Funcion main'''
-    num = pedirNum()
-    comprobacion = comprobarPrimo(num)
+    num = pedir_num()
+    comprobacion = comprobar_primo(num)
     
     print(comprobacion)
 
