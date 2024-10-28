@@ -14,8 +14,8 @@ def pedir_altura():
         try:
             altura = int(input('Introduce la altura del triangulo: '))
 
-            while altura < 0:
-                altura = int(input('Introduce la altura del triangulo: '))
+            if altura < 0:
+                raise ValueError
 
             comprobacion = True
 
@@ -31,9 +31,10 @@ def pedir_altura():
 def main():
     altura = pedir_altura()
     num_max = altura * 2
-    serie = calcular_serie(num_max)
 
-    print(serie)    
+    for i in range (0, num_max + 1, 2):
+        serie = calcular_serie(i)
+        print(serie)    
 
         
 if __name__ == '__main__':

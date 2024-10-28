@@ -23,7 +23,7 @@ def pedir_num():
 
     while not comprobacion:
         try:
-            num = int(input('Introduce un numero entero positivo: '))
+            num = int(input('Introduce un numero entero positivo (Introduce 0 para terminar): '))
             if num < 0:
                 raise ValueError
 

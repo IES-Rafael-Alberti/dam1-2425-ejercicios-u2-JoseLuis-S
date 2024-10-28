@@ -3,14 +3,14 @@ def pedir_num():
 
     while not comprobacion:
         try:
-            num = int(input('Introduce un numero para saber su tabla de multiplicar: '))
-            while num < 0:
-                num = int(input('Introduce un numero para la cuenta regresiva (mayor que 0): '))
+            num = int(input('Introduce un numero para saber su tabla de multiplicar (del 0 al 10): '))
+            if num < 0 or num > 10:
+                raise ValueError
 
             comprobacion = True
 
         except ValueError:
-            print('\n**ERROR**\n Numero no valido.')
+            print('\n**ERROR**\nNumero no valido.')
         
         except:
             print('Error desconocido.')

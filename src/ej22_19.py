@@ -3,7 +3,7 @@ def comprobar_opcion(opcion):
         return 'Has elegido la opcion 1'
     else:
         return 'Has elegido la opcion 2'
-        exit()
+    
 
 def pedir_opcion():
     comprobacion = False
