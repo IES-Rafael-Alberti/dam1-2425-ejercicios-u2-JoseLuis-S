@@ -61,10 +61,10 @@ def comprobarEdad(edad: str) -> bool:
     edad = edad.strip()
 
     # Comprueba que la edad introducida unicamente contenga numeros enteros naturales
-    for i in edad:
-        if i not in '0123456789':
-            return False 
+    if not edad.isdigit():
+        return False
         
+    edad = int(edad)
     # La edad no puede ser mayor a 120 años
     if edad > 120:
         return False

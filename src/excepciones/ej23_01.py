@@ -9,9 +9,12 @@ Funciones disponibles:
     * pedir_edad - pide la edad al usuario
     * main - funcion principal
 '''
-def generar_serie():
+def generar_serie(edad: int) -> str:
     '''
     Esta funcion genera la serie de años cumplidos por el usuario
+
+    Args:
+        edad (int): Edad del usuario
 
     Returns:
         str: Serie de años cumplidos por el usuario
